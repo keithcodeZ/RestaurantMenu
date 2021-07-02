@@ -1,0 +1,111 @@
+body{
+    background: #000 url('/images/bg.jpg') no-repeat right top;
+}
+
+.meals{
+    border: red solid 3px;
+    border-radius: 10px;
+    height: 400px;
+    width: 250px;
+    float: right;
+    position: relative;
+    margin-right: 30px;
+}
+
+#dessert{
+    margin-right: 55px;
+    background: url('/images/dessert.jpg');
+    background-size: cover;
+}
+
+#rolls{
+    background: url('/images/rolls.jpg');
+    background-size: cover;
+}
+
+#pasta{
+    background: url('/images/pasta.jpg');
+    background-size: cover;
+}
+
+#ramen{
+    background: url('/images/ramen.jpg');
+    background-size: cover;
+}
+
+.meal_name{
+    background:red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.meals:hover .overlay{
+    opacity: .7;
+    padding-top: 15px;
+}
+
+table{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80%;
+    margin-right: 30px;
+}
+
+.box{
+    display: table;
+    overflow: hidden;     
+}
+
+#Atable{
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.vertical-text {
+    transform: rotate(270deg);
+    font-size: x-large;
+    width: 40px;
+}
+
+#tbg{
+    background: url('/images/rolls1.jpg');
+}
+
+#theader{
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+}
+
+.right-text{
+    padding: 0 20px 0 20px;
+    text-align: justify;
+    background-color: white;
+}
+
+.b_border{
+    border-bottom: gainsboro solid 2px;
+}
+
+#tvname{
+    color: gold;
+}

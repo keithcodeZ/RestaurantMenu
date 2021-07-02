@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pauline Keith C. Zipagan">
+    <meta name="student number" content="201911327">
+    <meta name="university" content="FEU Institute of Technology">
+    <meta name="course" content="Advance Web Design">
+
+    <!--WEB PAGE TITLE-->
+    <title>Restaurant Menu</title>
+
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" href="/css/external_style.css">
+
+    <!--EXTERNAL JAVASCRIPT-->
+    <script src="javascript/external_js.js"></script>
+
+    <!--BOOTSTRAP CDN via jsDelivr-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/Home Page/favicon.ico">
+
+    
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row justify-content-between">
+            <div class="col-10"><img width="900px" src="/images/header.png" alt=""></div>
+            <div class="col-2 mt-5 pt-5">
+                <button onmouseleave = "menuTrigger()" onclick="hideTable()" class="btn btn-danger btn-outline-light" style="border: 1px solid gray; background-color: red; width: 130px; font-weight: bold;">MENU</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <!--DESSERT-->
+        <div class="meals" id="dessert" onmouseover="setTimeout(showTable, 2000, 'dessert')">
+            <div class="meal_name">DESSERT</div>
+            <div class="overlay">
+                <div>
+                    <center>
+                    <hr size="5" width="50%">
+                    Desserts made with love
+                    <hr size="5" width="50%">
+                    <i class="bi bi-play-circle"></i> More
+                    </center>
+                </div>
+            </div>        
+        </div>
+
+        <!--PASTA-->
+        <div class="meals" id="pasta" onmouseover="setTimeout(showTable, 2000, 'pasta')">
+            <div class="meal_name">PASTA</div>
+            <div class="overlay">
+                <div>
+                    <center>
+                    <hr size="5" width="50%">
+                    Perfect pasta & wine night
+                    <hr size="5" width="50%">
+                    <i class="bi bi-play-circle"></i> More
+                    </center>
+                </div>
+            </div>        
+        </div>
+
+        <!--ROLLS-->
+        <div class="meals" id="rolls" onmouseover="setTimeout(showTable, 2000, 'rolls')">
+            <div class="meal_name">ROLLS</div>
+            <div class="overlay">
+                <div>
+                    <center>
+                    <hr size="5" width="50%">
+                    The famous sushi rolls
+                    <hr size="5" width="50%">
+                    <i class="bi bi-play-circle"></i> More
+                    </center>
+                </div>
+            </div>        
+        </div>
+
+        <!--RAMEN-->
+        <div class="meals" id="ramen" onmouseover="setTimeout(showTable, 2000, 'ramen')">
+            <div class="meal_name">RAMEN</div>
+            <div class="overlay">
+                <div>
+                    <center>
+                    <hr size="5" width="50%">
+                    Japan's popular ramen 
+                    <hr size="5" width="50%">
+                    <i class="bi bi-play-circle"></i> More
+                    </center>
+                </div>
+            </div>        
+        </div>
+
+
+        <!--TABLE MENU-->
+        <div class="box">
+            <table id="Atable" align="right" cellspacing = "0">
+                <tr>
+                    <td bgcolor="red" rowspan="3">
+                        <p id="tvname" class="vertical-text">ROLLS</p>
+                    </td>
+                    <td id="tbg" width="500px" height="400px" rowspan="3"></td>
+                    <td class="right-text" colspan="2"><h2 id="theader">Rolls</h2></td>
+                </tr>
+
+                <tr>
+                    <td style="border-right: black solid 3px;" class="right-text b_border">Lorem ipsum dolor sit amet consectetur
+                    </td>
+                    <td class="right-text b_border">Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </td>
+                </tr>
+                <tr>   
+                    <td class="right-text" colspan="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis porro adipisci recusandae non voluptas, alias deleniti atque dolorum ut!</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
