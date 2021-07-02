@@ -1,5 +1,5 @@
 body{
-    background: #000 url('/images/bg.jpg') no-repeat right top;
+    background: #000 url('./images/bg.jpg') no-repeat right top;
 }
 
 .meals{
@@ -14,7 +14,7 @@ body{
 
 #dessert{
     margin-right: 55px;
-    background: url('/images/dessert.jpg');
+    background: url('./images/dessert.jpg');
     background-size: cover;
 }
 
